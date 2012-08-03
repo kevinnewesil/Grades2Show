@@ -59,10 +59,10 @@ return array(
 		),
 
 		'db' => array(
-			'connectionString' => 'mysql:host=localhost;dbname=fastgrade',
+			'connectionString' => 'mysql:host=localhost;dbname=grades2show',
 			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => 'tessa',
+			'username' => 'grades2show',
+			'password' => 'grades2show',
 			'charset' => 'utf8',
 			'enableParamLogging' => TRUE, // show query parameters
 		),

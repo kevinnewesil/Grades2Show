@@ -16,7 +16,7 @@
             padding-top: 60px;
         }
 	</style>
-<?
+<?php
 /*
  <link rel="stylesheet" type="text/css" href="<?php echo Yii::app() -> request -> baseUrl; ?>/css/main.css" />
  <link rel="stylesheet" type="text/css" href="<?php echo Yii::app() -> request -> baseUrl; ?>/css/form.css" />
