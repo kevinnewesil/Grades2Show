@@ -935,3 +935,263 @@ Stack trace:
 REQUEST_URI=/fastgrade/index.php/user/edit/230
 HTTP_REFERER=http://localhost/fastgrade/index.php/user/admin
 ---
+2012/08/03 20:20:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "edit".' in C:\xampp_grades\yii-framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp_grades\yii-framework\web\CController.php(271): CController->missingAction('edit')
+#1 C:\xampp_grades\yii-framework\web\CWebApplication.php(276): CController->run('edit')
+#2 C:\xampp_grades\yii-framework\web\CWebApplication.php(135): CWebApplication->runController('user/edit')
+#3 C:\xampp_grades\yii-framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp_grades\htdocs\index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/edit
+HTTP_REFERER=http://localhost/index.php/user/admin
+---
+2012/08/03 20:20:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "edit".' in C:\xampp_grades\yii-framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp_grades\yii-framework\web\CController.php(271): CController->missingAction('edit')
+#1 C:\xampp_grades\yii-framework\web\CWebApplication.php(276): CController->run('edit')
+#2 C:\xampp_grades\yii-framework\web\CWebApplication.php(135): CWebApplication->runController('user/edit')
+#3 C:\xampp_grades\yii-framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp_grades\htdocs\index.php(23): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/edit/34
+HTTP_REFERER=http://localhost/index.php/user/admin
+---
+2012/08/04 10:34:06 [error] [exception.CException] exception 'CException' with message 'Property "Grade.model.grade.periodId" is not defined.' in C:\xampp_grades\yii-framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp_grades\yii-framework\db\ar\CActiveRecord.php(144): CComponent->__get('model.grade.per...')
+#1 C:\xampp_grades\yii-framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('model.grade.per...')
+#2 C:\xampp_grades\yii-framework\web\helpers\CHtml.php(1774): CHtml::resolveValue(Object(Grade), 'model.grade.per...')
+#3 C:\xampp_grades\yii-framework\web\helpers\CHtml.php(1205): CHtml::activeInputField('text', Object(Grade), 'model.grade.per...', Array)
+#4 C:\xampp_grades\yii-framework\web\widgets\CActiveForm.php(575): CHtml::activeTextField(Object(Grade), 'model.grade.per...', Array)
+#5 C:\xampp_grades\htdocs\protected\views\grade\_form.php(22): CActiveForm->textField(Object(Grade), 'model.grade.per...')
+#6 C:\xampp_grades\yii-framework\web\CBaseController.php(127): require('C:\xampp_grades...')
+#7 C:\xampp_grades\yii-framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp_grades...', Array, true)
+#8 C:\xampp_grades\yii-framework\web\CController.php(870): CBaseController->renderFile('C:\xampp_grades...', Array, true)
+#9 C:\xampp_grades\htdocs\protected\views\grade\create.php(14): CController->renderPartial('_form', Array)
+#10 C:\xampp_grades\yii-framework\web\CBaseController.php(127): require('C:\xampp_grades...')
+#11 C:\xampp_grades\yii-framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp_grades...', Array, true)
+#12 C:\xampp_grades\yii-framework\web\CController.php(870): CBaseController->renderFile('C:\xampp_grades...', Array, true)
+#13 C:\xampp_grades\yii-framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#14 C:\xampp_grades\htdocs\protected\controllers\GradeController.php(55): CController->render('create', Array)
+#15 C:\xampp_grades\yii-framework\web\actions\CInlineAction.php(50): GradeController->actionCreate()
+#16 C:\xampp_grades\yii-framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\xampp_grades\yii-framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 C:\xampp_grades\yii-framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp_grades\yii-framework\web\CWebApplication.php(276): CController->run('create')
+#20 C:\xampp_grades\yii-framework\web\CWebApplication.php(135): CWebApplication->runController('grade/create')
+#21 C:\xampp_grades\yii-framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp_grades\htdocs\index.php(23): CApplication->run()
+#23 {main}
+REQUEST_URI=/index.php/grade/create
+HTTP_REFERER=http://localhost/index.php/grade
+---
+2012/08/04 10:35:36 [error] [exception.CException] exception 'CException' with message 'Property "Grade..periodId" is not defined.' in C:\xampp_grades\yii-framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp_grades\yii-framework\db\ar\CActiveRecord.php(144): CComponent->__get('.periodId')
+#1 C:\xampp_grades\yii-framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('.periodId')
+#2 C:\xampp_grades\yii-framework\web\helpers\CHtml.php(1774): CHtml::resolveValue(Object(Grade), '.periodId')
+#3 C:\xampp_grades\yii-framework\web\helpers\CHtml.php(1205): CHtml::activeInputField('text', Object(Grade), '.periodId', Array)
+#4 C:\xampp_grades\yii-framework\web\widgets\CActiveForm.php(575): CHtml::activeTextField(Object(Grade), '.periodId', Array)
+#5 C:\xampp_grades\htdocs\protected\views\grade\_form.php(22): CActiveForm->textField(Object(Grade), '.periodId')
+#6 C:\xampp_grades\yii-framework\web\CBaseController.php(127): require('C:\xampp_grades...')
+#7 C:\xampp_grades\yii-framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp_grades...', Array, true)
+#8 C:\xampp_grades\yii-framework\web\CController.php(870): CBaseController->renderFile('C:\xampp_grades...', Array, true)
+#9 C:\xampp_grades\htdocs\protected\views\grade\create.php(14): CController->renderPartial('_form', Array)
+#10 C:\xampp_grades\yii-framework\web\CBaseController.php(127): require('C:\xampp_grades...')
+#11 C:\xampp_grades\yii-framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp_grades...', Array, true)
+#12 C:\xampp_grades\yii-framework\web\CController.php(870): CBaseController->renderFile('C:\xampp_grades...', Array, true)
+#13 C:\xampp_grades\yii-framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#14 C:\xampp_grades\htdocs\protected\controllers\GradeController.php(55): CController->render('create', Array)
+#15 C:\xampp_grades\yii-framework\web\actions\CInlineAction.php(50): GradeController->actionCreate()
+#16 C:\xampp_grades\yii-framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\xampp_grades\yii-framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 C:\xampp_grades\yii-framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp_grades\yii-framework\web\CWebApplication.php(276): CController->run('create')
+#20 C:\xampp_grades\yii-framework\web\CWebApplication.php(135): CWebApplication->runController('grade/create')
+#21 C:\xampp_grades\yii-framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp_grades\htdocs\index.php(23): CApplication->run()
+#23 {main}
+REQUEST_URI=/index.php/grade/create
+HTTP_REFERER=http://localhost/index.php/grade
+---
+2012/08/04 10:35:51 [error] [exception.CException] exception 'CException' with message 'Property "Grade..periodId" is not defined.' in C:\xampp_grades\yii-framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp_grades\yii-framework\db\ar\CActiveRecord.php(144): CComponent->__get('.periodId')
+#1 C:\xampp_grades\yii-framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('.periodId')
+#2 C:\xampp_grades\yii-framework\web\helpers\CHtml.php(1774): CHtml::resolveValue(Object(Grade), '.periodId')
+#3 C:\xampp_grades\yii-framework\web\helpers\CHtml.php(1205): CHtml::activeInputField('text', Object(Grade), '.periodId', Array)
+#4 C:\xampp_grades\yii-framework\web\widgets\CActiveForm.php(575): CHtml::activeTextField(Object(Grade), '.periodId', Array)
+#5 C:\xampp_grades\htdocs\protected\views\grade\_form.php(22): CActiveForm->textField(Object(Grade), '.periodId')
+#6 C:\xampp_grades\yii-framework\web\CBaseController.php(127): require('C:\xampp_grades...')
+#7 C:\xampp_grades\yii-framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp_grades...', Array, true)
+#8 C:\xampp_grades\yii-framework\web\CController.php(870): CBaseController->renderFile('C:\xampp_grades...', Array, true)
+#9 C:\xampp_grades\htdocs\protected\views\grade\create.php(14): CController->renderPartial('_form', Array)
+#10 C:\xampp_grades\yii-framework\web\CBaseController.php(127): require('C:\xampp_grades...')
+#11 C:\xampp_grades\yii-framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp_grades...', Array, true)
+#12 C:\xampp_grades\yii-framework\web\CController.php(870): CBaseController->renderFile('C:\xampp_grades...', Array, true)
+#13 C:\xampp_grades\yii-framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#14 C:\xampp_grades\htdocs\protected\controllers\GradeController.php(55): CController->render('create', Array)
+#15 C:\xampp_grades\yii-framework\web\actions\CInlineAction.php(50): GradeController->actionCreate()
+#16 C:\xampp_grades\yii-framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\xampp_grades\yii-framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 C:\xampp_grades\yii-framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp_grades\yii-framework\web\CWebApplication.php(276): CController->run('create')
+#20 C:\xampp_grades\yii-framework\web\CWebApplication.php(135): CWebApplication->runController('grade/create')
+#21 C:\xampp_grades\yii-framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp_grades\htdocs\index.php(23): CApplication->run()
+#23 {main}
+REQUEST_URI=/index.php/grade/create
+HTTP_REFERER=http://localhost/index.php/grade
+---
+2012/08/04 10:35:55 [error] [exception.CException] exception 'CException' with message 'Property "Grade..periodId" is not defined.' in C:\xampp_grades\yii-framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp_grades\yii-framework\db\ar\CActiveRecord.php(144): CComponent->__get('.periodId')
+#1 C:\xampp_grades\yii-framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('.periodId')
+#2 C:\xampp_grades\yii-framework\web\helpers\CHtml.php(1774): CHtml::resolveValue(Object(Grade), '.periodId')
+#3 C:\xampp_grades\yii-framework\web\helpers\CHtml.php(1205): CHtml::activeInputField('text', Object(Grade), '.periodId', Array)
+#4 C:\xampp_grades\yii-framework\web\widgets\CActiveForm.php(575): CHtml::activeTextField(Object(Grade), '.periodId', Array)
+#5 C:\xampp_grades\htdocs\protected\views\grade\_form.php(22): CActiveForm->textField(Object(Grade), '.periodId')
+#6 C:\xampp_grades\yii-framework\web\CBaseController.php(127): require('C:\xampp_grades...')
+#7 C:\xampp_grades\yii-framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp_grades...', Array, true)
+#8 C:\xampp_grades\yii-framework\web\CController.php(870): CBaseController->renderFile('C:\xampp_grades...', Array, true)
+#9 C:\xampp_grades\htdocs\protected\views\grade\create.php(14): CController->renderPartial('_form', Array)
+#10 C:\xampp_grades\yii-framework\web\CBaseController.php(127): require('C:\xampp_grades...')
+#11 C:\xampp_grades\yii-framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp_grades...', Array, true)
+#12 C:\xampp_grades\yii-framework\web\CController.php(870): CBaseController->renderFile('C:\xampp_grades...', Array, true)
+#13 C:\xampp_grades\yii-framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#14 C:\xampp_grades\htdocs\protected\controllers\GradeController.php(55): CController->render('create', Array)
+#15 C:\xampp_grades\yii-framework\web\actions\CInlineAction.php(50): GradeController->actionCreate()
+#16 C:\xampp_grades\yii-framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\xampp_grades\yii-framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 C:\xampp_grades\yii-framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp_grades\yii-framework\web\CWebApplication.php(276): CController->run('create')
+#20 C:\xampp_grades\yii-framework\web\CWebApplication.php(135): CWebApplication->runController('grade/create')
+#21 C:\xampp_grades\yii-framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp_grades\htdocs\index.php(23): CApplication->run()
+#23 {main}
+REQUEST_URI=/index.php/grade/create
+HTTP_REFERER=http://localhost/index.php/grade
+---
+2012/08/04 10:35:57 [error] [exception.CException] exception 'CException' with message 'Property "Grade..periodId" is not defined.' in C:\xampp_grades\yii-framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp_grades\yii-framework\db\ar\CActiveRecord.php(144): CComponent->__get('.periodId')
+#1 C:\xampp_grades\yii-framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('.periodId')
+#2 C:\xampp_grades\yii-framework\web\helpers\CHtml.php(1774): CHtml::resolveValue(Object(Grade), '.periodId')
+#3 C:\xampp_grades\yii-framework\web\helpers\CHtml.php(1205): CHtml::activeInputField('text', Object(Grade), '.periodId', Array)
+#4 C:\xampp_grades\yii-framework\web\widgets\CActiveForm.php(575): CHtml::activeTextField(Object(Grade), '.periodId', Array)
+#5 C:\xampp_grades\htdocs\protected\views\grade\_form.php(22): CActiveForm->textField(Object(Grade), '.periodId')
+#6 C:\xampp_grades\yii-framework\web\CBaseController.php(127): require('C:\xampp_grades...')
+#7 C:\xampp_grades\yii-framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp_grades...', Array, true)
+#8 C:\xampp_grades\yii-framework\web\CController.php(870): CBaseController->renderFile('C:\xampp_grades...', Array, true)
+#9 C:\xampp_grades\htdocs\protected\views\grade\create.php(14): CController->renderPartial('_form', Array)
+#10 C:\xampp_grades\yii-framework\web\CBaseController.php(127): require('C:\xampp_grades...')
+#11 C:\xampp_grades\yii-framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp_grades...', Array, true)
+#12 C:\xampp_grades\yii-framework\web\CController.php(870): CBaseController->renderFile('C:\xampp_grades...', Array, true)
+#13 C:\xampp_grades\yii-framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#14 C:\xampp_grades\htdocs\protected\controllers\GradeController.php(55): CController->render('create', Array)
+#15 C:\xampp_grades\yii-framework\web\actions\CInlineAction.php(50): GradeController->actionCreate()
+#16 C:\xampp_grades\yii-framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\xampp_grades\yii-framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 C:\xampp_grades\yii-framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp_grades\yii-framework\web\CWebApplication.php(276): CController->run('create')
+#20 C:\xampp_grades\yii-framework\web\CWebApplication.php(135): CWebApplication->runController('grade/create')
+#21 C:\xampp_grades\yii-framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp_grades\htdocs\index.php(23): CApplication->run()
+#23 {main}
+REQUEST_URI=/index.php/grade/create
+HTTP_REFERER=http://localhost/index.php/grade
+---
+2012/08/04 10:43:56 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widget.TbActiveForm" is invalid. Make sure it points to an existing PHP file.' in C:\xampp_grades\yii-framework\YiiBase.php:318
+Stack trace:
+#0 C:\xampp_grades\yii-framework\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 C:\xampp_grades\yii-framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(GradeController), 'bootstrap.widge...', Array)
+#2 C:\xampp_grades\yii-framework\web\CBaseController.php(190): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\xampp_grades\htdocs\protected\views\grade\_form.php(7): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 C:\xampp_grades\yii-framework\web\CBaseController.php(127): require('C:\xampp_grades...')
+#5 C:\xampp_grades\yii-framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp_grades...', Array, true)
+#6 C:\xampp_grades\yii-framework\web\CController.php(870): CBaseController->renderFile('C:\xampp_grades...', Array, true)
+#7 C:\xampp_grades\htdocs\protected\views\grade\create.php(14): CController->renderPartial('_form', Array)
+#8 C:\xampp_grades\yii-framework\web\CBaseController.php(127): require('C:\xampp_grades...')
+#9 C:\xampp_grades\yii-framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp_grades...', Array, true)
+#10 C:\xampp_grades\yii-framework\web\CController.php(870): CBaseController->renderFile('C:\xampp_grades...', Array, true)
+#11 C:\xampp_grades\yii-framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#12 C:\xampp_grades\htdocs\protected\controllers\GradeController.php(55): CController->render('create', Array)
+#13 C:\xampp_grades\yii-framework\web\actions\CInlineAction.php(50): GradeController->actionCreate()
+#14 C:\xampp_grades\yii-framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 C:\xampp_grades\yii-framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#16 C:\xampp_grades\yii-framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp_grades\yii-framework\web\CWebApplication.php(276): CController->run('create')
+#18 C:\xampp_grades\yii-framework\web\CWebApplication.php(135): CWebApplication->runController('grade/create')
+#19 C:\xampp_grades\yii-framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\xampp_grades\htdocs\index.php(23): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php/grade/create
+HTTP_REFERER=http://localhost/index.php/grade
+---
+2012/08/04 18:39:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp_grades\yii-framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\xampp_grades\yii-framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp_grades\yii-framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp_grades\yii-framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp_grades\yii-framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp_grades\yii-framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp_grades\yii-framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp_grades\yii-framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp_grades\yii-framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\xampp_grades\yii-framework\web\CWebApplication.php(135): CWebApplication->runController('group/admin')
+#9 C:\xampp_grades\yii-framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp_grades\htdocs\index.php(23): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/group/admin
+HTTP_REFERER=http://localhost/index.php/site/login
+---
+2012/08/04 18:39:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp_grades\yii-framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\xampp_grades\yii-framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp_grades\yii-framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp_grades\yii-framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp_grades\yii-framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp_grades\yii-framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp_grades\yii-framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp_grades\yii-framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp_grades\yii-framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\xampp_grades\yii-framework\web\CWebApplication.php(135): CWebApplication->runController('group/admin')
+#9 C:\xampp_grades\yii-framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp_grades\htdocs\index.php(23): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/group/admin
+HTTP_REFERER=http://localhost/index.php/group
+---
+2012/08/04 18:40:18 [error] [php] include(TbButtonColumn.php): failed to open stream: No such file or directory (C:\xampp_grades\yii-framework\YiiBase.php:418)
+Stack trace:
+#0 C:\xampp_grades\yii-framework\YiiBase.php(198): import()
+#1 C:\xampp_grades\yii-framework\zii\widgets\grid\CGridView.php(313): createComponent()
+#2 C:\xampp_grades\htdocs\protected\extensions\bootstrap\widgets\TbGridView.php(103): TbGridView->initColumns()
+#3 C:\xampp_grades\yii-framework\zii\widgets\grid\CGridView.php(284): TbGridView->initColumns()
+#4 C:\xampp_grades\htdocs\protected\extensions\bootstrap\widgets\TbGridView.php(48): TbGridView->init()
+#5 C:\xampp_grades\yii-framework\web\CBaseController.php(148): TbGridView->init()
+#6 C:\xampp_grades\yii-framework\web\CBaseController.php(173): GroupController->createWidget()
+#7 C:\xampp_grades\htdocs\protected\views\group\admin.php(51): GroupController->widget()
+#8 C:\xampp_grades\yii-framework\web\CBaseController.php(127): require()
+#9 C:\xampp_grades\yii-framework\web\CBaseController.php(96): GroupController->renderInternal()
+#10 C:\xampp_grades\yii-framework\web\CController.php(870): GroupController->renderFile()
+#11 C:\xampp_grades\yii-framework\web\CController.php(783): GroupController->renderPartial()
+#12 C:\xampp_grades\htdocs\protected\controllers\GroupController.php(148): GroupController->render()
+#13 C:\xampp_grades\yii-framework\web\actions\CInlineAction.php(50): GroupController->actionAdmin()
+#14 C:\xampp_grades\yii-framework\web\CController.php(309): CInlineAction->runWithParams()
+#15 C:\xampp_grades\yii-framework\web\filters\CFilterChain.php(134): GroupController->runAction()
+#16 C:\xampp_grades\yii-framework\web\filters\CFilter.php(41): CFilterChain->run()
+#17 C:\xampp_grades\yii-framework\web\CController.php(1146): CAccessControlFilter->filter()
+#18 C:\xampp_grades\yii-framework\web\filters\CInlineFilter.php(59): GroupController->filterAccessControl()
+#19 C:\xampp_grades\yii-framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#20 C:\xampp_grades\yii-framework\web\CController.php(292): CFilterChain->run()
+#21 C:\xampp_grades\yii-framework\web\CController.php(266): GroupController->runActionWithFilters()
+#22 C:\xampp_grades\yii-framework\web\CWebApplication.php(276): GroupController->run()
+#23 C:\xampp_grades\yii-framework\web\CWebApplication.php(135): CWebApplication->runController()
+#24 C:\xampp_grades\yii-framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\xampp_grades\htdocs\index.php(23): CWebApplication->run()
+REQUEST_URI=/index.php/group/admin
+in C:\xampp_grades\htdocs\protected\extensions\bootstrap\widgets\TbGridView.php (103)
+in C:\xampp_grades\htdocs\protected\extensions\bootstrap\widgets\TbGridView.php (48)
+in C:\xampp_grades\htdocs\protected\views\group\admin.php (51)
